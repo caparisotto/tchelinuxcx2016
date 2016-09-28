@@ -22,50 +22,31 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/" accesskey="s">Introdução ao Openstack</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/sobre/" accesskey="z">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="/prints/" accesskey="x">Prints</a>
-                    </li>
-                    <li>
-                        <a href="/conclusao/" accesskey="c">Conclusão</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+                <a class="navbar-brand" href="/" accesskey="s"></a>
+                        <a href="/sobre/" accesskey="z"></a>
+                        <a href="/prints/" accesskey="x"></a>
+                        <a href="/conclusao/" accesskey="c"></a>
 
     <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/tux.png');"></div>
+                <div class="novofill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/tche27.png');"></div>
                 <div class="carousel-caption">
+                    <h2>Print 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="novofill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/tche12.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Print 2</h2>
                 </div>
             </div>
         </div>

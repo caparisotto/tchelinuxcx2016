@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.conf import settings
 
 urlpatterns = [
-    url(r'^$', 'tchelinux2016.views.inicial'),
-    url(r'^slide2/', 'tchelinux2016.views.slide12'),
-    url(r'^end/', 'tchelinux2016.views.final'),
+    url(r'^$', 'tchelinux2016.views.capa'),
+    url(r'^sobre/', 'tchelinux2016.views.sobre'),
+    url(r'^prints/', 'tchelinux2016.views.prints'),
+    url(r'^conclusao/', 'tchelinux2016.views.conclusao'),
 
 #    url(r'^admin/', include(admin.site.urls)),
 ]
