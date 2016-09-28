@@ -12,8 +12,17 @@ def capa(request):
 def sobre(request):
         return render_to_response("sobre.html")
 
-def prints(request):
-        return render_to_response("prints.html")
+def prints(request,img):
+        anterior=int(img)-1
+        proximo=int(img)+1
+        
+        if img == "1":
+            anterior = 1
+        elif img == "21":
+            proximo = 21
+
+        imagem="tche"+img+".png"
+        return render_to_response("prints.html", {'imagem': imagem, 'anterior': anterior, 'proximo': proximo})
 
 def conclusao(request):
         return render_to_response("conclusao.html")

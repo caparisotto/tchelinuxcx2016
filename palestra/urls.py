@@ -20,7 +20,7 @@ from django.conf import settings
 urlpatterns = [
     url(r'^$', 'tchelinux2016.views.capa'),
     url(r'^sobre/', 'tchelinux2016.views.sobre'),
-    url(r'^prints/', 'tchelinux2016.views.prints'),
+    url(r'^prints/([0-9]+)/$', 'tchelinux2016.views.prints'),
     url(r'^conclusao/', 'tchelinux2016.views.conclusao'),
 
 #    url(r'^admin/', include(admin.site.urls)),

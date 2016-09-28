@@ -3,74 +3,23 @@
 
 <head>
     {% load staticfiles %}
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Introdução ao Openstack</title>
-
-    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/full-slider.css' %}" />
-
-
 </head>
 
 <body>
+	<img src=/{{ MEDIA_URL }}media/imagens/{{ imagem }}>
 
-                <a class="navbar-brand" href="/" accesskey="s"></a>
-                        <a href="/sobre/" accesskey="z"></a>
-                        <a href="/prints/" accesskey="x"></a>
-                        <a href="/conclusao/" accesskey="c"></a>
+	{% if anterior %}
+        <a href="/prints/{{ anterior }}" accesskey="n"></a>
+	{% endif %}
+	{% if proximo %}
+        <a href="/prints/{{ proximo }}" accesskey="m"></a>
+	{% endif %}
 
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
+        <a href="/" accesskey="s"></a>
+        <a href="/sobre/" accesskey="z"></a>
+        <a href="/prints/1" accesskey="x"></a>
+        <a href="/conclusao/" accesskey="c"></a>
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="novofill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/tche27.png');"></div>
-                <div class="carousel-caption">
-                    <h2>Print 1</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="novofill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/tche12.png');"></div>
-                <div class="carousel-caption">
-                    <h2>Print 2</h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
-
-
-    <script src=" {% static 'js/jquery.js' %}"></script>
-    <script src=" {% static 'js/bootstrap.min.js' %}"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 500000 //changes the speed
-    })
-    </script>
 
 </body>
 
