@@ -19,10 +19,13 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', 'tchelinux2016.views.sobre'),
-    #url(r'^sobre/', 'tchelinux2016.views.sobre'),
+    url(r'^wbg/', 'tchelinux2016.views.sobrewbg'),
     url(r'^prints/([0-9]+)/$', 'tchelinux2016.views.prints'),
+    url(r'^prints_wbg/([0-9]+)/$', 'tchelinux2016.views.printswbg'),
     url(r'^fontes/', 'tchelinux2016.views.fontes'),
+    url(r'^fontes_wbg/', 'tchelinux2016.views.fonteswbg'),
     url(r'^conclusao/', 'tchelinux2016.views.conclusao'),
+    url(r'^conclusao_wbg/', 'tchelinux2016.views.conclusaowbg'),
 
 #    url(r'^admin/', include(admin.site.urls)),
 ]

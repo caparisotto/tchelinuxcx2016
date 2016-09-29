@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load staticfiles %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Introdução ao Openstack</title>
+
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/full-slider.css' %}" />
+
+
+</head>
+
+<body>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr11.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Apresentação</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <!-- <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div> -->
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr12.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Slide 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr13.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Slide 3</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr14.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Slide 4</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr15.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Slide 5</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr16.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Slide 6</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/{{ MEDIA_URL }}media/imagens/apr17.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Slide 7</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+        <a href="/wbg/" accesskey="z"></a>
+        <a href="/prints_wbg/1" accesskey="x"></a>
+        <a href="/fontes_wbg/" accesskey="c"></a>
+        <a href="/conclusao_wbg/" accesskey="v"></a>
+
+
+    <script src=" {% static 'js/jquery.js' %}"></script>
+    <script src=" {% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 500000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
