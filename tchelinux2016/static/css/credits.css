@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(ellipse at top left, #999 0%, #123 100%);
+  background: radial-gradient(ellipse at top left, #999 0%, #777 100%);
   overflow: hidden;
 }
 

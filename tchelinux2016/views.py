@@ -6,8 +6,8 @@ import os,sys,psycopg2.extras
 
 # Create your views here.
 
-def capa(request):
-        return render_to_response("capa.html")
+#def capa(request):
+#        return render_to_response("capa.html")
 
 def sobre(request):
         return render_to_response("sobre.html")
