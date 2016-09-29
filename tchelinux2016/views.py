@@ -24,5 +24,8 @@ def prints(request,img):
         imagem="tche"+img+".png"
         return render_to_response("prints.html", {'imagem': imagem, 'anterior': anterior, 'proximo': proximo})
 
+def fontes(request):
+        return render_to_response("fontes.html")
+
 def conclusao(request):
         return render_to_response("conclusao.html")

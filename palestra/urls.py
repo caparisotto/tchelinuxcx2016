@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^$', 'tchelinux2016.views.capa'),
     url(r'^sobre/', 'tchelinux2016.views.sobre'),
     url(r'^prints/([0-9]+)/$', 'tchelinux2016.views.prints'),
+    url(r'^fontes/', 'tchelinux2016.views.fontes'),
     url(r'^conclusao/', 'tchelinux2016.views.conclusao'),
 
 #    url(r'^admin/', include(admin.site.urls)),
