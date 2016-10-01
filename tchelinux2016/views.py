@@ -21,8 +21,8 @@ def prints(request,img):
         
         if img == "1":
             anterior = 1
-        elif img == "21":
-            proximo = 21
+        elif img == "22":
+            proximo = 22
 
         imagem="tche"+img+".png"
         return render_to_response("prints.html", {'imagem': imagem, 'anterior': anterior, 'proximo': proximo})
@@ -33,8 +33,8 @@ def printswbg(request,img):
         
         if img == "1":
             anterior = 1
-        elif img == "21":
-            proximo = 21
+        elif img == "22":
+            proximo = 22
 
         imagem="tche"+img+".png"
         return render_to_response("prints_wbg.html", {'imagem': imagem, 'anterior': anterior, 'proximo': proximo})
